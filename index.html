@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjiv Kumar A - Portfolio</title>
+    <meta name="description" content="Sanjiv Kumar A - Full Stack Developer Portfolio. Showcasing skills, projects, certifications, and experience.">
+    <title>Sanjiv Kumar A - Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">Sanjiv Kumar A</div>
+            <div class="nav-logo">
+                <span class="logo-mark">SK</span>
+                <span class="logo-text">Sanjiv<strong>Kumar</strong></span>
+            </div>
+            
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -23,50 +28,137 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+
+            <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm <span class="highlight">Sanjiv Kumar A</span></h1>
-            <p class="hero-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
-            <p class="hero-description">Passionate about building innovative solutions and exploring cutting-edge technologies</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="Sanjiv_Kumar_A_Portfolio_Updated.pdf" download class="btn btn-secondary">Download Resume</a>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="accent-text">Sanjiv Kumar A</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</h2>
+                    <p class="hero-description">
+                        I craft elegant digital solutions combining logic, creativity, and modern technologies. 
+                        Passionate about building impactful software that solves real-world problems.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="Sanjiv_Kumar_A_Portfolio_Updated.pdf" download class="btn btn-outline">Download Resume</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sanjiv-kumar-a-1683b6381/?isSelfProfile=true" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:sanjivkumaralaguraja0407@gmail.com" class="social-btn" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919080302342" class="social-btn" title="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="window-title">developer.js</span>
+                        </div>
+                        <div class="window-code">
+                            <pre><span class="code-const">const</span> <span class="code-var">developer</span> = {
+  <span class="code-key">name</span>: <span class="code-string">"Sanjiv Kumar A"</span>,
+  <span class="code-key">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-key">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>],
+  <span class="code-key">passion</span>: <span class="code-string">"Building Solutions"</span>
+};</pre>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="hero-socials">
-                <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your.email@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section about-section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate developer and technology enthusiast with a strong foundation in full-stack development. I love solving complex problems and creating elegant solutions through code.</p>
-                    <p>With experience in multiple programming languages and frameworks, I'm committed to continuous learning and staying updated with the latest technologies in the industry.</p>
-                    <p>I believe in writing clean, efficient code and following best practices to deliver quality software solutions. My journey in tech has been incredibly rewarding, and I'm excited to take on new challenges and opportunities.</p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <span class="info-label">Location:</span>
-                            <span class="info-value">Bengaluru, India</span>
+            
+            <div class="about-grid">
+                <div class="about-card glass-effect">
+                    <p>
+                        I'm a passionate full-stack developer with a strong foundation in building scalable web applications. 
+                        My approach combines technical excellence with creative problem-solving to deliver impactful digital experiences.
+                    </p>
+                    <p>
+                        With expertise across multiple technologies and frameworks, I'm committed to continuous learning 
+                        and staying at the forefront of modern development practices.
+                    </p>
+                    <p>
+                        I believe in writing clean, maintainable code and following best practices. Every project is an opportunity 
+                        to create something meaningful that makes a difference.
+                    </p>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-card glass-effect">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Status:</span>
-                            <span class="info-value">Open to Opportunities</span>
+                        <h3>Clean Code</h3>
+                        <p>Writing maintainable, efficient solutions</p>
+                    </div>
+                    <div class="highlight-card glass-effect">
+                        <div class="highlight-icon">
+                            <i class="fas fa-brain"></i>
                         </div>
+                        <h3>Problem Solver</h3>
+                        <p>Tackling complex challenges with logic</p>
+                    </div>
+                    <div class="highlight-card glass-effect">
+                        <div class="highlight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Full Stack</h3>
+                        <p>Frontend to backend expertise</p>
+                    </div>
+                    <div class="highlight-card glass-effect">
+                        <div class="highlight-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Always Learning</h3>
+                        <p>Staying current with technologies</p>
+                    </div>
+                </div>
+
+                <div class="about-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <span class="meta-value">Bengaluru, India</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Status</span>
+                        <span class="meta-value">Open to Opportunities</span>
                     </div>
                 </div>
             </div>
@@ -74,58 +166,69 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="section skills-section">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <h2 class="section-title">Technical Skills</h2>
+            
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">SQL</span>
+                <div class="skill-category glass-effect">
+                    <h3 class="skill-title">Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">SQL</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Frontend Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Responsive Design</span>
+                <div class="skill-category glass-effect">
+                    <h3 class="skill-title">Frontend</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Responsive Design</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Backend Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">Database Design</span>
-                        <span class="skill-tag">REST APIs</span>
+                <div class="skill-category glass-effect">
+                    <h3 class="skill-title">Backend</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Express</span>
+                        <span class="skill-badge">REST APIs</span>
+                        <span class="skill-badge">Database Design</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Visual Studio Code</span>
-                        <span class="skill-tag">Docker</span>
+                <div class="skill-category glass-effect">
+                    <h3 class="skill-title">Tools & Platforms</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Docker</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Core Competencies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Data Structures</span>
-                        <span class="skill-tag">Algorithms</span>
-                        <span class="skill-tag">Web Development</span>
+                <div class="skill-category glass-effect">
+                    <h3 class="skill-title">Databases</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">Database Design</span>
+                        <span class="skill-badge">Query Optimization</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-effect">
+                    <h3 class="skill-title">Core Competencies</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Problem Solving</span>
+                        <span class="skill-badge">Data Structures</span>
+                        <span class="skill-badge">Algorithms</span>
+                        <span class="skill-badge">Web Development</span>
                     </div>
                 </div>
             </div>
@@ -133,25 +236,35 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="section experience-section">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
+            
+            <div class="timeline">
+                <div class="timeline-item glass-effect">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Internship - Full Stack Development</h3>
-                        <p class="experience-period">Recent</p>
-                        <p class="experience-description">Gained hands-on experience in full-stack web development, working with modern technologies and best practices. Contributed to real-world projects and collaborated with experienced developers.</p>
-                        <a href="Sanjiv Kumar A_internship Completion Letter.pdf" download class="inline-link">View Internship Certificate</a>
+                        <span class="experience-tag">Current</span>
+                        <h3>Full Stack Development Internship</h3>
+                        <p class="experience-desc">
+                            Gained hands-on experience in full-stack web development, working with modern technologies and best practices. 
+                            Contributed to real-world projects and collaborated with experienced developers.
+                        </p>
+                        <a href="Sanjiv Kumar A_internship Completion Letter.pdf" target="_blank" rel="noopener" class="experience-link">
+                            <i class="fas fa-download"></i> View Certificate
+                        </a>
                     </div>
                 </div>
-                <div class="timeline-item">
+
+                <div class="timeline-item glass-effect">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Technical Training & Development</h3>
-                        <p class="experience-period">Ongoing</p>
-                        <p class="experience-description">Continuously enhancing skills through online courses, certifications, and personal projects. Focusing on expanding expertise in cloud technologies and advanced development practices.</p>
+                        <span class="experience-tag">Ongoing</span>
+                        <h3>Technical Skills Development</h3>
+                        <p class="experience-desc">
+                            Continuously enhancing expertise through online courses, certifications, and personal projects. 
+                            Focusing on expanding knowledge in cloud technologies and advanced development practices.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -159,40 +272,40 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education">
+    <section id="education" class="section education-section">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="education-item">
-                    <div class="education-marker"></div>
-                    <div class="education-content">
+            
+            <div class="education-grid">
+                <div class="education-card glass-effect">
+                    <div class="education-header">
                         <h3>Bachelor of Engineering (B.E.)</h3>
-                        <p class="education-institution">Ramaiah Institute of Technology</p>
-                        <p class="education-details">
-                            <span><strong>Stream:</strong> Information Science & Engineering</span><br>
-                            <span><strong>CGPA:</strong> 7.8/10.0</span><br>
-                            <span><strong>Status:</strong> Pursuing</span>
-                        </p>
+                        <span class="education-degree">Information Science & Engineering</span>
+                    </div>
+                    <p class="education-institution">Ramaiah Institute of Technology</p>
+                    <div class="education-details">
+                        <span><strong>CGPA:</strong> 7.8 / 10.0</span>
+                        <span><strong>Status:</strong> Pursuing</span>
                     </div>
                 </div>
-                <div class="education-item">
-                    <div class="education-marker"></div>
-                    <div class="education-content">
-                        <h3>Pre-University (PUC)</h3>
-                        <p class="education-institution">Sri Aurobindo PU College</p>
-                        <p class="education-details">
-                            <span><strong>Percentage:</strong> 94%</span>
-                        </p>
+
+                <div class="education-card glass-effect">
+                    <div class="education-header">
+                        <h3>Pre-University Course (PUC)</h3>
+                    </div>
+                    <p class="education-institution">Sri Aurobindo PU College</p>
+                    <div class="education-details">
+                        <span><strong>Percentage:</strong> 94%</span>
                     </div>
                 </div>
-                <div class="education-item">
-                    <div class="education-marker"></div>
-                    <div class="education-content">
+
+                <div class="education-card glass-effect">
+                    <div class="education-header">
                         <h3>Secondary Education (10th)</h3>
-                        <p class="education-institution">Sri Aurobindo School</p>
-                        <p class="education-details">
-                            <span><strong>CGPA:</strong> 9.4/10.0</span>
-                        </p>
+                    </div>
+                    <p class="education-institution">Sri Aurobindo School</p>
+                    <div class="education-details">
+                        <span><strong>CGPA:</strong> 9.4 / 10.0</span>
                     </div>
                 </div>
             </div>
@@ -200,18 +313,17 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <section id="certifications" class="section certifications-section">
         <div class="container">
             <h2 class="section-title">Certifications & Achievements</h2>
             
             <div class="certifications-grid">
                 <!-- Oracle Certificate -->
-                <div class="cert-card">
-                    <div class="cert-image-container">
-                        <img src="9080302342_cert.jpg" alt="Oracle Certificate">
-                        <div class="cert-badge">
-                            <i class="fas fa-trophy"></i>
-                            Oracle
+                <div class="cert-card glass-effect">
+                    <div class="cert-image">
+                        <img src="9080302342_cert.jpg" alt="Oracle Certification">
+                        <div class="cert-overlay">
+                            <span class="cert-badge-label">Oracle</span>
                         </div>
                     </div>
                     <div class="cert-info">
@@ -222,12 +334,11 @@
                 </div>
 
                 <!-- Ramanujan Level 1 -->
-                <div class="cert-card">
-                    <div class="cert-image-container">
+                <div class="cert-card glass-effect">
+                    <div class="cert-image">
                         <img src="AAI26OFA.jpg" alt="Ramanujan Level 1">
-                        <div class="cert-badge">
-                            <i class="fas fa-medal"></i>
-                            Level 1
+                        <div class="cert-overlay">
+                            <span class="cert-badge-label">Level 1</span>
                         </div>
                     </div>
                     <div class="cert-info">
@@ -238,37 +349,33 @@
                 </div>
 
                 <!-- Ramanujan Level 3 -->
-                <div class="cert-card">
-                    <div class="cert-image-container">
+                <div class="cert-card glass-effect">
+                    <div class="cert-image">
                         <img src="level 3.jpg" alt="Ramanujan Level 3">
-                        <div class="cert-badge">
-                            <i class="fas fa-star"></i>
-                            Level 3
+                        <div class="cert-overlay">
+                            <span class="cert-badge-label">Level 3</span>
                         </div>
                     </div>
                     <div class="cert-info">
                         <h3>Ramanujan Programming - Level 3</h3>
                         <p class="cert-issuer">HackerEarth / Ramanujan Program</p>
-                        <p class="cert-description">Advanced level certification in competitive programming with mastery of complex algorithms.</p>
+                        <p class="cert-description">Advanced level certification in competitive programming and complex algorithmic solutions.</p>
                     </div>
                 </div>
 
                 <!-- Internship Certificate -->
-                <div class="cert-card">
-                    <div class="cert-image-container">
-                        <div class="cert-placeholder">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="cert-badge">
-                            <i class="fas fa-briefcase"></i>
-                            Internship
+                <div class="cert-card glass-effect">
+                    <div class="cert-image certificate-placeholder">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-overlay">
+                            <span class="cert-badge-label">Internship</span>
                         </div>
                     </div>
                     <div class="cert-info">
                         <h3>Full Stack Development Internship</h3>
                         <p class="cert-issuer">Professional Development</p>
-                        <p class="cert-description">Completed comprehensive internship in full-stack web development with hands-on experience.</p>
-                        <a href="Sanjiv Kumar A_internship Completion Letter.pdf" download class="cert-download">
+                        <p class="cert-description">Completed comprehensive internship in full-stack web development with hands-on project experience.</p>
+                        <a href="Sanjiv Kumar A_internship Completion Letter.pdf" target="_blank" rel="noopener" class="cert-link">
                             <i class="fas fa-download"></i> View Certificate
                         </a>
                     </div>
@@ -278,143 +385,189 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section projects-section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card glass-effect">
                     <div class="project-header">
                         <h3>Portfolio Website</h3>
                         <div class="project-links">
-                            <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" rel="noopener" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://sanjiv-kumar-16.github.io/Portfolio/" target="_blank" rel="noopener" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
                         </div>
                     </div>
-                    <p class="project-description">A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. Showcases skills, experience, and achievements with a beautiful UI/UX design.</p>
+                    <p class="project-desc">
+                        A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. 
+                        Features a premium dark theme with glassmorphism design and smooth animations.
+                    </p>
                     <div class="project-tags">
-                        <span class="project-tag">HTML5</span>
-                        <span class="project-tag">CSS3</span>
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">Responsive Design</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card glass-effect">
                     <div class="project-header">
                         <h3>Full Stack Web Application</h3>
                         <div class="project-links">
-                            <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" rel="noopener" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
-                    <p class="project-description">A complete full-stack application with frontend and backend components. Implements RESTful APIs, database operations, and user authentication.</p>
+                    <p class="project-desc">
+                        A complete full-stack application with frontend and backend connectivity. 
+                        Implements RESTful APIs, database operations, and user authentication.
+                    </p>
                     <div class="project-tags">
-                        <span class="project-tag">Node.js</span>
-                        <span class="project-tag">React</span>
-                        <span class="project-tag">MongoDB</span>
-                        <span class="project-tag">Express</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card glass-effect">
                     <div class="project-header">
-                        <h3>Data Structure & Algorithm Solutions</h3>
+                        <h3>Algorithm & DSA Solutions</h3>
                         <div class="project-links">
-                            <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" rel="noopener" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
-                    <p class="project-description">Collection of optimized solutions for complex data structure and algorithm problems, including sorting, searching, and dynamic programming.</p>
+                    <p class="project-desc">
+                        Collection of optimized solutions for complex data structure and algorithm problems. 
+                        Includes sorting, searching, and dynamic programming implementations.
+                    </p>
                     <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Java</span>
-                        <span class="project-tag">Algorithms</span>
-                        <span class="project-tag">Competitive Programming</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">DSA</span>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card glass-effect">
                     <div class="project-header">
                         <h3>Database Management System</h3>
                         <div class="project-links">
-                            <a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" rel="noopener" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
-                    <p class="project-description">Designed and implemented a comprehensive database system with normalized schemas, complex queries, and efficient indexing strategies.</p>
+                    <p class="project-desc">
+                        Designed and implemented a comprehensive database system with normalized schemas, 
+                        complex queries, and efficient indexing strategies.
+                    </p>
                     <div class="project-tags">
-                        <span class="project-tag">SQL</span>
-                        <span class="project-tag">Database Design</span>
-                        <span class="project-tag">MySQL</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Database Design</span>
+                        <span class="tag">Optimization</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Resume Section -->
+    <section class="section resume-section">
+        <div class="container">
+            <div class="resume-cta glass-effect">
+                <div class="resume-content">
+                    <h2>Looking for my detailed resume?</h2>
+                    <p>Download my full resume to see my complete professional profile, achievements, and technical experience.</p>
+                </div>
+                <a href="Sanjiv_Kumar_A_Portfolio_Updated.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact-section">
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <div class="contact-info">
+            
+            <div class="contact-wrapper">
+                <div class="contact-info glass-effect">
+                    <h3>Get In Touch</h3>
+                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>your.email@example.com</p>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:sanjivkumaralaguraja0407@gmail.com">sanjivkumaralaguraja0407@gmail.com</a>
                         </div>
                     </div>
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p>+91 (Your Number)</p>
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+919080302342">+91 9080302342</a>
                         </div>
                     </div>
+
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
-                            <h3>Location</h3>
-                            <p>Bengaluru, India</p>
+                            <span class="contact-label">Location</span>
+                            <span>Bengaluru, India</span>
                         </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sanjiv-kumar-a-1683b6381/?isSelfProfile=true" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:sanjivkumaralaguraja0407@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form glass-effect" id="contactForm">
+                    <h3>Send Me a Message</h3>
+                    
                     <div class="form-group">
                         <input type="text" placeholder="Your Name" required>
                     </div>
+                    
                     <div class="form-group">
                         <input type="email" placeholder="Your Email" required>
                     </div>
+                    
                     <div class="form-group">
                         <input type="text" placeholder="Subject" required>
                     </div>
+                    
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
                     </div>
+                    
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
-            </div>
-
-            <div class="social-links">
-                <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" class="social-icon">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="mailto:your.email@example.com" class="social-icon">
-                    <i class="fas fa-envelope"></i>
-                </a>
             </div>
         </div>
     </section>
@@ -422,8 +575,24 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Sanjiv Kumar A. All rights reserved.</p>
-            <p>Designed and Built with <i class="fas fa-heart"></i> by Sanjiv Kumar A</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Sanjiv Kumar A</h3>
+                    <p>Full Stack Developer & Problem Solver</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/Sanjiv-Kumar-16" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sanjiv-kumar-a-1683b6381/?isSelfProfile=true" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:sanjivkumaralaguraja0407@gmail.com">Email</a>
+                    <a href="tel:+919080302342">Phone</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sanjiv Kumar A. All rights reserved.</p>
+                <p>Designed & Built with <i class="fas fa-heart"></i> by Sanjiv Kumar A</p>
+            </div>
         </div>
     </footer>
 
